@@ -7,10 +7,10 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-[#2C2A2A] text-white font-sans">
-     <!-- Navbar -->
-     <header class="flex justify-between items-center px-10 py-5">
+    <!-- Navbar -->
+    <header class="flex flex-wrap justify-between items-center px-6 md:px-10 py-5">
         <h1 class="text-2xl font-bold text-green-500">AhmadSchema</h1>
-        <nav class="space-x-8 text-sm">
+        <nav class="hidden md:flex space-x-8 text-sm">
             <a href="#home" class="hover:text-green-500">Home</a>
             <a href="#services" class="hover:text-green-500">Services</a>
             <a href="#about" class="hover:text-green-500">About</a>
@@ -19,81 +19,56 @@
     </header>
 
     <!-- Home Section -->
-    <section class="flex items-center px-10 py-20 fade-in">
-        <div class="w-1/2 space-y-6">
-            <h2 class="text-xl text-green-500">bonjour</h2>
-            <h1 class="text-4xl font-bold">JE REPONDS AU NOM DE<br> MOUHAMED SY</h1>
-            <p class="text-gray-400">developer web | mobile</p>
-            <p class="text-sm text-gray-500 px-1 py-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vel metus in nisl vehicula bibendum.</p>
-            <a href="#contact" class="px-4 py-2  bg-green-500 rounded-full hover:bg-green-600">Contact me</a>
+    <section class="flex flex-wrap items-center px-6 md:px-10 py-20 fade-in">
+        <div class="w-full md:w-1/2 space-y-6 text-center md:text-left">
+            <h2 class="text-xl text-green-500">Bonjour</h2>
+            <h1 class="text-3xl md:text-4xl font-bold">JE REPONDS AU NOM DE<br> MOUHAMED SY</h1>
+            <p class="text-gray-400">Développeur web | mobile</p>
+            <p class="text-sm text-gray-500 px-1 py-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <a href="#contact" class="px-4 py-2 bg-green-500 rounded-full hover:bg-green-600">Contact me</a>
         </div>
-        <div class="w-1/2 transition-all transform hover:scale-110 hover:rotate-3 hover:shadow-xl hover:shadow-green-500 rounded-full overflow-hidden">
-          <img src="./image/WhatsApp_Image_2025-01-02_à_17.54.14_d748cd85-removebg-preview.png" alt="Mouhamed Sy" class="rounded-full shadow-lg transition-all duration-300 ease-in-out">
-      </div>
-      
+        <div class="w-full md:w-1/2 flex justify-center mt-8 md:mt-0">
+            <img src="./image/WhatsApp_Image_2025-01-02_à_17.54.14_d748cd85-removebg-preview.png" alt="Mouhamed Sy" class="rounded-full shadow-lg w-60 md:w-80 transition-all transform hover:scale-110 hover:rotate-3 hover:shadow-xl hover:shadow-green-500">
+        </div>
     </section>
-     <!-- About section -->
-     <section id="about" class="px-10 py-20 bg-gray-800 fade-in">
+
+    <!-- About section -->
+    <section id="about" class="px-6 md:px-10 py-20 bg-gray-800 fade-in">
         <h2 class="text-2xl font-bold text-green-500 text-center">About</h2>
-        <p class="mt-4 text-gray-400">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque mauris at lacus blandit tincidunt.
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque mauris at lacus blandit tincidunt
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque mauris at lacus blandit tincidunt
+        <p class="mt-4 text-gray-400 text-center md:text-left">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
         </p>
     </section>
-       <!-- Skills Section -->
-<section class="px-10 py-20 fade-in">
-    <h2 class="text-2xl font-bold text-green-500 text-center">My Core Skills</h2>
-    <div class="grid grid-cols-5 gap-4 mt-8">
-        <!-- Figma -->
-        <div class="text-center transition-transform transform hover:scale-110 hover:shadow-xl hover:shadow-green-500 p-4 rounded-lg">
-            <p>Figma</p>
-            <div class="text-green-500 text-4xl font-bold">85%</div>
+
+    <!-- Skills Section -->
+    <section class="px-6 md:px-10 py-20 fade-in">
+        <h2 class="text-2xl font-bold text-green-500 text-center">My Core Skills</h2>
+        <div class="grid grid-cols-2 md:grid-cols-5 gap-4 mt-8 text-center">
+            <div class="p-4 rounded-lg hover:scale-110 hover:shadow-xl hover:shadow-green-500">Figma <div class="text-green-500 text-4xl font-bold">85%</div></div>
+            <div class="p-4 rounded-lg hover:scale-110 hover:shadow-xl hover:shadow-green-500">Tailwind <div class="text-green-500 text-4xl font-bold">90%</div></div>
+            <div class="p-4 rounded-lg hover:scale-110 hover:shadow-xl hover:shadow-green-500">PHP <div class="text-green-500 text-4xl font-bold">70%</div></div>
+            <div class="p-4 rounded-lg hover:scale-110 hover:shadow-xl hover:shadow-green-500">JS <div class="text-green-500 text-4xl font-bold">50%</div></div>
+            <div class="p-4 rounded-lg hover:scale-110 hover:shadow-xl hover:shadow-green-500">SQL <div class="text-green-500 text-4xl font-bold">80%</div></div>
         </div>
-  
-        <!-- Tailwind -->
-        <div class="text-center transition-transform transform hover:scale-110 hover:shadow-xl hover:shadow-green-500 p-4 rounded-lg">
-            <p>TAILWIND</p>
-            <div class="text-green-500 text-4xl font-bold">90%</div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="px-6 md:px-10 py-20 bg-gray-800 fade-in">
+        <h2 class="text-2xl font-bold text-green-500 text-center">Services</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-8">
+            <div class="bg-gray-700 p-4 rounded card-hover transform transition-all hover:rotate-3">
+                <img src="./image/Rectangle 3.png" alt="Service 1" class="w-full h-40 md:h-64 object-cover">
+                <a href="#" class="block mt-2 text-green-500">voir plus →</a>
+            </div>
+            <div class="bg-gray-700 p-4 rounded card-hover transform transition-all hover:rotate-6">
+                <img src="./image/Rectangle 4.png" alt="Service 2" class="w-full h-40 md:h-64 object-cover">
+                <a href="#" class="block mt-2 text-green-500">voir plus →</a>
+            </div>
+            <div class="bg-gray-700 p-4 rounded card-hover transform transition-all hover:rotate-9">
+                <img src="./image/Rectangle 7.png" alt="Service 3" class="w-full h-40 md:h-64 object-cover">
+                <a href="#" class="block mt-2 text-green-500">voir plus →</a>
+            </div>
         </div>
-  
-        <!-- PHP -->
-        <div class="text-center transition-transform transform hover:scale-110 hover:shadow-xl hover:shadow-green-500 p-4 rounded-lg">
-            <p>PHP</p>
-            <div class="text-green-500 text-4xl font-bold">70%</div>
-        </div>
-  
-        <!-- JS -->
-        <div class="text-center transition-transform transform hover:scale-110 hover:shadow-xl hover:shadow-green-500 p-4 rounded-lg">
-            <p>JS</p>
-            <div class="text-green-500 text-4xl font-bold">50%</div>
-        </div>
-  
-        <!-- SQL -->
-        <div class="text-center transition-transform transform hover:scale-110 hover:shadow-xl hover:shadow-green-500 p-4 rounded-lg">
-            <p>SQL</p>
-            <div class="text-green-500 text-4xl font-bold">80%</div>
-        </div>
-    </div>
-  </section>
-  
-  <section id="services" class="px-10 py-20 bg-gray-800 fade-in">
-    <h2 class="text-2xl font-bold text-green-500 text-center">Services</h2>
-    <div class="grid grid-cols-3 gap-4 mt-8">
-        <div class="bg-gray-700 p-4 rounded card-hover transform transition-all hover:rotate-3">
-            <img src="./image/Rectangle 3.png" alt="Service 1" class="w-full h-64 object-cover">
-            <a href="#" class="block mt-2 text-green-500">voir plus →</a>
-        </div>
-        <div class="bg-gray-700 p-4 rounded card-hover transform transition-all hover:rotate-6">
-            <img src="./image/Rectangle 4.png" alt="Service 2" class="w-full h-64 object-cover">
-            <a href="#" class="block mt-2 text-green-500">voir plus →</a>
-        </div>
-        <div class="bg-gray-700 p-4 rounded card-hover transform transition-all hover:rotate-9">
-            <img src="./image/Rectangle 7.png" alt="Service 3" class="w-full h-64 object-cover">
-            <a href="#" class="block mt-2 text-green-500">voir plus →</a>
-        </div>
-    </div>
-  </section>
-    
+    </section>
 </body>
 </html>
